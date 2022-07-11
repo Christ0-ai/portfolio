@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap");
+
+/* GENERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+li {
+  color: #45505b;
+}
+
+button {
+  background-color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #0563bb;
+  margin-bottom: 20px;
+}
+
+h5 {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  background: #f7f8f9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.fa-linkedin,
+.fa-github {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.fa-linkedin:hover,
+.fa-github:hover {
+  transition: 0.5s;
+  color: #0d6efd;
+}
+
+input,
+textarea {
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  border: 1px solid grey;
+}
+
+input:hover,
+textarea:hover {
+  border: 1px solid #0678e3;
+}
+
+textarea {
+  padding-top: 20px;
+}
+/* GENERAL */
+
+/* HEADER */
+
+header {
+  height: 100vh;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+/* TRANSPARENCE */
+header::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+/* TRANSPARENCE */
+
+#presentation {
+  padding-left: 160px;
+  position: absolute;
+  top: 220px;
+}
+
+.name h1 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.name p {
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+/* HEADER */
+
+/* SECTION ABOUT */
+
+.container {
+  text-align: center;
+  padding: 20px 0 85px 0;
+}
+
+/* SECTION ABOUT */
+
+/* SECTION PARCOURS */
+
+.container_box {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  margin: auto;
+  width: 80%;
+}
+
+.box_left,
+.box_right {
+  width: 50%;
+}
+
+.box_right {
+  margin-left: 210px;
+}
+
+.box_left h3,
+.box_right h3 {
+  margin: 35px 0px;
+}
+
+.resume_item {
+  margin-bottom: 40px;
+}
+
+.resume_item h5 + p {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+/* SECTION PARCOURS */
+
+/* SECTION PORTFOLIO */
+
+h4 + p {
+  text-transform: uppercase;
+}
+
+#section_portfolio ul {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  width: 18%;
+  margin: auto;
+  list-style: none;
+}
+
+#section_portfolio ul li {
+  font-size: 14px;
+}
+
+#section_portfolio ul li button:hover,
+#section_portfolio ul li .active {
+  color: #0d6efd;
+}
+
+.projet {
+  margin-top: 55px;
+}
+
+.container_projet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 75%;
+  margin: auto;
+}
+
+.item_projet {
+  margin: 20px 20px 0 20px;
+  height: 300px;
+  width: 300px;
+  position: relative;
+}
+
+.item_projet img {
+  width: 100%;
+  height: 100%;
+}
+
+.item_projet:hover .details::after {
+  content: "";
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.portfolio-info {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
+  bottom: 120px;
+}
+
+.portfolio-info h4 {
+  text-transform: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  color: black;
+}
+
+.fa-info-circle:hover {
+  color: #0d6efd;
+}
+
+/* SECTION PORTFOLIO */
+
+/* SECTION TECHNOLOGIE APPLIQUEE */
+
+.container_langage {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container_langage div {
+  height: 380px;
+  width: 380px;
+  margin-bottom: 20px;
+}
+
+.container_langage div:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 35px 0 rgb(0 0 0 / 8%);
+  transition: all ease-in-out 0.3s;
+}
+
+.container_langage div p {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.container_langage img {
+  margin-top: 50px;
+}
+/* SECTION TECHNOLOGIE APPLIQUEE */
+
+/* SECTION CONTACT */
+
+#section_contact input {
+  height: 44px;
+}
+
+.container_input {
+  width: 60%;
+  margin: auto;
+}
+
+.container_input:first-child input {
+  width: 40%;
+}
+
+.container_input:first-child > input {
+  float: left;
+}
+
+.container_input:first-child input:nth-child(2) {
+  float: right;
+}
+
+.container_input:nth-child(2) > input,
+textarea {
+  width: 97%;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  background: #0563bb;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+input[type="submit"]:hover {
+  background: #0678e3;
+}
+
+/* SECTION CONTACT */
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  color: #45505b;
+  background: #f7f8f9;
+  font-size: 14px;
+  padding: 30px 0;
+}
+
+/* FOOTER */
